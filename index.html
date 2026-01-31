@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Routine Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">Daily Planner</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="nav-links">
+        <a href="#routine">Routine</a>
+        <a href="#">Motivation</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Daily Routine Planner</h1>
+        <p>Plan your day. Stay focused. Improve your life.</p>
+        <button onclick="scrollToRoutine()">Start Planning</button>
+        <button class="dark-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+</section>
+
+<!-- ROUTINE SECTION -->
+<section id="routine">
+
+    <!-- MORNING -->
+    <h2>🌅 Morning Routine</h2>
+    <div class="cards">
+        <div class="card" id="m1" onclick="editRoutine(this)">6:30 AM<br><span>Wake Up</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">7:00 AM<br><span>Exercise</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">8:00 AM<br><span>Study</span></div>
+    </div>
+
+    <!-- AFTERNOON -->
+    <h2>☀️ Afternoon Routine</h2>
+    <div class="cards">
+        <div class="card" id="m1" onclick="editRoutine(this)">1:00 PM<br><span>Lunch</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">2:00 PM<br><span>College / Work</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">5:00 PM<br><span>Revision</span></div>
+    </div>
+
+    <!-- EVENING -->
+    <h2>🌙 Evening Routine</h2>
+    <div class="cards">
+        <div class="card" id="m1" onclick="editRoutine(this)">6:30 PM<br><span>Practice</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">8:00 PM<br><span>Reading</span></div>
+        <div class="card" id="m1" onclick="editRoutine(this)">9:30 PM<br><span>Relax</span></div>
+    </div>
+
+</section>
+
+<!-- MOTIVATION -->
+<section class="quote">
+    <p>“Small daily improvements lead to big results.”</p>
+</section>
+
+<footer>
+    <p>© 2026 Daily Routine Planner</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
